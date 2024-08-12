@@ -13,7 +13,7 @@ if (getenv('JAWSDB_URL')) {
 }
 
 // Load the SQL file
-$sql = file_get_contents('path/to/your/file.sql');
+$sql = file_get_contents('exercici1.sql');
 
 // Execute the SQL file
 $stmt = $db->prepare($sql);
