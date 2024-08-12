@@ -7,12 +7,6 @@
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.1
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
-CREATE DATABASE IF NOT EXISTS `exercici1` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `exercici1`;
-
 -- Table structure for table `user`
 CREATE TABLE IF NOT EXISTS `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
