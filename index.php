@@ -1,5 +1,7 @@
 <?php
-    $db = new PDO('mysql:host=localhost;dbname=exercici1','root','');
+require 'db_connect.php';
+
+    //$db = new PDO('mysql:host=localhost;dbname=exercici1','root','');
     $statement = $db->prepare("SELECT username FROM user WHERE id = ?");
     $statement->bindParam(1, $_COOKIE['user'], PDO::PARAM_INT);
     $statement->execute();

@@ -1,4 +1,5 @@
 <?php
+require 'db_connect.php';
 /**
  * Created by PhpStorm.
  * User: Marta
@@ -22,7 +23,7 @@ $login = $_POST['login'];
 $password = $_POST['password'];
 
 
-$db = new PDO('mysql:host=localhost;dbname=exercici1','root','');
+//$db = new PDO('mysql:host=localhost;dbname=exercici1','root','');
 $statement = $db->prepare("SELECT id FROM user WHERE ( username=:login OR email=:login ) AND password=:password");
 
 $statement->bindParam(':login', $login, PDO::PARAM_STR);

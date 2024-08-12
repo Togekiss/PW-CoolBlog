@@ -5,6 +5,7 @@
  * Date: 12/03/2017
  * Time: 22:29
  */
+require 'db_connect.php';
 
 function usernameOk($username) {
     $pattern = "~[A-Za-z0-9]+~";
@@ -42,7 +43,7 @@ $confirm_password = $_POST['confirm_password'];
 
 if (usernameOk($username) && emailOk($email) && birthdateOk($birthdate) && passwordOk($password, $confirm_password)) {
 
-    $db = new PDO('mysql:host=localhost;dbname=exercici1','root','');
+    //$db = new PDO('mysql:host=localhost;dbname=exercici1','root','');
     $statement = $db->prepare("INSERT INTO user (username, email, birthdate, password) VALUES (?, ?, ?, ?)");
 
     $statement->bindParam(1, $username, PDO::PARAM_STR);

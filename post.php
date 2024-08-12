@@ -5,6 +5,7 @@
  * Date: 13/03/2017
  * Time: 0:35
  */
+require 'db_connect.php';
 
 if (empty($_POST)) {
     header("Location: postpage.php");
@@ -21,7 +22,7 @@ $title = $_POST['title'];
 $content = $_POST['content'];
 $user = $_COOKIE['user'];
 
-$db = new PDO('mysql:host=localhost;dbname=exercici1','root','');
+//$db = new PDO('mysql:host=localhost;dbname=exercici1','root','');
 $statement = $db->prepare("INSERT INTO entry (user_id, title, content, created_at) VALUES (?, ?, ?, ?)");
 
 $statement->bindParam(1, $user, PDO::PARAM_INT);
