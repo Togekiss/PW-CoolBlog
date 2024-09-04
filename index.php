@@ -32,7 +32,7 @@ require 'db_connect.php';
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/clean-blog.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -176,7 +176,7 @@ require 'db_connect.php';
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
 <!-- Theme JavaScript -->
-<script src="js/clean-blog.min.js"></script>
+<script src="js/clean-blog.js"></script>
 
 
 </body>

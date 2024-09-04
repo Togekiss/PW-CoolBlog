@@ -34,7 +34,7 @@ else $user = $user['username'];
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/clean-blog.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -158,7 +158,7 @@ else $user = $user['username'];
 </script>
 
 <!-- Theme JavaScript -->
-<script src="js/clean-blog.min.js"></script>
+<script src="js/clean-blog.js"></script>
 
 </body>
 
